@@ -12,6 +12,8 @@
 		385EC5662107FB0A00D2B096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 385EC5652107FB0A00D2B096 /* main.m */; };
 		385EC5702107FB0A00D2B096 /* YVPopupObserverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 385EC56F2107FB0A00D2B096 /* YVPopupObserverTests.m */; };
 		385EC57B2107FB0A00D2B096 /* YVPopupObserverUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 385EC57A2107FB0A00D2B096 /* YVPopupObserverUITests.m */; };
+		38674A0D21080F9F002BBEC9 /* UIView+YVFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 38674A0921080F9F002BBEC9 /* UIView+YVFrame.m */; };
+		38674A0E21080F9F002BBEC9 /* YVPopupObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 38674A0A21080F9F002BBEC9 /* YVPopupObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		385EC5762107FB0A00D2B096 /* YVPopupObserverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YVPopupObserverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		385EC57A2107FB0A00D2B096 /* YVPopupObserverUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YVPopupObserverUITests.m; sourceTree = "<group>"; };
 		385EC57C2107FB0A00D2B096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38674A0921080F9F002BBEC9 /* UIView+YVFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YVFrame.m"; sourceTree = "<group>"; };
+		38674A0A21080F9F002BBEC9 /* YVPopupObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVPopupObserver.m; sourceTree = "<group>"; };
+		38674A0B21080F9F002BBEC9 /* UIView+YVFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YVFrame.h"; sourceTree = "<group>"; };
+		38674A0C21080F9F002BBEC9 /* YVPopupObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVPopupObserver.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 		385EC5552107FB0800D2B096 /* YVPopupObserver */ = {
 			isa = PBXGroup;
 			children = (
+				38674A0821080F9F002BBEC9 /* YVPopupObserver */,
 				385EC55F2107FB0A00D2B096 /* Assets.xcassets */,
 				385EC5612107FB0A00D2B096 /* LaunchScreen.storyboard */,
 				385EC5642107FB0A00D2B096 /* Info.plist */,
@@ -117,6 +124,17 @@
 				385EC57C2107FB0A00D2B096 /* Info.plist */,
 			);
 			path = YVPopupObserverUITests;
+			sourceTree = "<group>";
+		};
+		38674A0821080F9F002BBEC9 /* YVPopupObserver */ = {
+			isa = PBXGroup;
+			children = (
+				38674A0B21080F9F002BBEC9 /* UIView+YVFrame.h */,
+				38674A0921080F9F002BBEC9 /* UIView+YVFrame.m */,
+				38674A0C21080F9F002BBEC9 /* YVPopupObserver.h */,
+				38674A0A21080F9F002BBEC9 /* YVPopupObserver.m */,
+			);
+			path = YVPopupObserver;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				385EC5662107FB0A00D2B096 /* main.m in Sources */,
+				38674A0E21080F9F002BBEC9 /* YVPopupObserver.m in Sources */,
+				38674A0D21080F9F002BBEC9 /* UIView+YVFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
