@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		385EC5582107FB0800D2B096 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 385EC5572107FB0800D2B096 /* AppDelegate.m */; };
+		385EC55B2107FB0800D2B096 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 385EC55A2107FB0800D2B096 /* ViewController.m */; };
+		385EC55E2107FB0800D2B096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385EC55C2107FB0800D2B096 /* Main.storyboard */; };
+		385EC5602107FB0A00D2B096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385EC55F2107FB0A00D2B096 /* Assets.xcassets */; };
+		385EC5632107FB0A00D2B096 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385EC5612107FB0A00D2B096 /* LaunchScreen.storyboard */; };
+		385EC5662107FB0A00D2B096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 385EC5652107FB0A00D2B096 /* main.m */; };
+		385EC5702107FB0A00D2B096 /* YVPopupObserverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 385EC56F2107FB0A00D2B096 /* YVPopupObserverTests.m */; };
+		385EC57B2107FB0A00D2B096 /* YVPopupObserverUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 385EC57A2107FB0A00D2B096 /* YVPopupObserverUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		385EC56C2107FB0A00D2B096 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 385EC54B2107FB0800D2B096 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 385EC5522107FB0800D2B096;
+			remoteInfo = YVPopupObserver;
+		};
+		385EC5772107FB0A00D2B096 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 385EC54B2107FB0800D2B096 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 385EC5522107FB0800D2B096;
+			remoteInfo = YVPopupObserver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		385EC5532107FB0800D2B096 /* YVPopupObserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YVPopupObserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		385EC5562107FB0800D2B096 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		385EC5572107FB0800D2B096 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		385EC5592107FB0800D2B096 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		385EC55A2107FB0800D2B096 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		385EC55D2107FB0800D2B096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		385EC55F2107FB0A00D2B096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		385EC5622107FB0A00D2B096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		385EC5642107FB0A00D2B096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		385EC5652107FB0A00D2B096 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		385EC56B2107FB0A00D2B096 /* YVPopupObserverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YVPopupObserverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		385EC56F2107FB0A00D2B096 /* YVPopupObserverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YVPopupObserverTests.m; sourceTree = "<group>"; };
+		385EC5712107FB0A00D2B096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		385EC5762107FB0A00D2B096 /* YVPopupObserverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YVPopupObserverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		385EC57A2107FB0A00D2B096 /* YVPopupObserverUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YVPopupObserverUITests.m; sourceTree = "<group>"; };
+		385EC57C2107FB0A00D2B096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		385EC5502107FB0800D2B096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		385EC5682107FB0A00D2B096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		385EC5732107FB0A00D2B096 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		385EC54A2107FB0800D2B096 = {
+			isa = PBXGroup;
+			children = (
+				385EC5552107FB0800D2B096 /* YVPopupObserver */,
+				385EC56E2107FB0A00D2B096 /* YVPopupObserverTests */,
+				385EC5792107FB0A00D2B096 /* YVPopupObserverUITests */,
+				385EC5542107FB0800D2B096 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		385EC5542107FB0800D2B096 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				385EC5532107FB0800D2B096 /* YVPopupObserver.app */,
+				385EC56B2107FB0A00D2B096 /* YVPopupObserverTests.xctest */,
+				385EC5762107FB0A00D2B096 /* YVPopupObserverUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		385EC5552107FB0800D2B096 /* YVPopupObserver */ = {
+			isa = PBXGroup;
+			children = (
+				385EC5562107FB0800D2B096 /* AppDelegate.h */,
+				385EC5572107FB0800D2B096 /* AppDelegate.m */,
+				385EC5592107FB0800D2B096 /* ViewController.h */,
+				385EC55A2107FB0800D2B096 /* ViewController.m */,
+				385EC55C2107FB0800D2B096 /* Main.storyboard */,
+				385EC55F2107FB0A00D2B096 /* Assets.xcassets */,
+				385EC5612107FB0A00D2B096 /* LaunchScreen.storyboard */,
+				385EC5642107FB0A00D2B096 /* Info.plist */,
+				385EC5652107FB0A00D2B096 /* main.m */,
+			);
+			path = YVPopupObserver;
+			sourceTree = "<group>";
+		};
+		385EC56E2107FB0A00D2B096 /* YVPopupObserverTests */ = {
+			isa = PBXGroup;
+			children = (
+				385EC56F2107FB0A00D2B096 /* YVPopupObserverTests.m */,
+				385EC5712107FB0A00D2B096 /* Info.plist */,
+			);
+			path = YVPopupObserverTests;
+			sourceTree = "<group>";
+		};
+		385EC5792107FB0A00D2B096 /* YVPopupObserverUITests */ = {
+			isa = PBXGroup;
+			children = (
+				385EC57A2107FB0A00D2B096 /* YVPopupObserverUITests.m */,
+				385EC57C2107FB0A00D2B096 /* Info.plist */,
+			);
+			path = YVPopupObserverUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		385EC5522107FB0800D2B096 /* YVPopupObserver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 385EC57F2107FB0A00D2B096 /* Build configuration list for PBXNativeTarget "YVPopupObserver" */;
+			buildPhases = (
+				385EC54F2107FB0800D2B096 /* Sources */,
+				385EC5502107FB0800D2B096 /* Frameworks */,
+				385EC5512107FB0800D2B096 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YVPopupObserver;
+			productName = YVPopupObserver;
+			productReference = 385EC5532107FB0800D2B096 /* YVPopupObserver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		385EC56A2107FB0A00D2B096 /* YVPopupObserverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 385EC5822107FB0A00D2B096 /* Build configuration list for PBXNativeTarget "YVPopupObserverTests" */;
+			buildPhases = (
+				385EC5672107FB0A00D2B096 /* Sources */,
+				385EC5682107FB0A00D2B096 /* Frameworks */,
+				385EC5692107FB0A00D2B096 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				385EC56D2107FB0A00D2B096 /* PBXTargetDependency */,
+			);
+			name = YVPopupObserverTests;
+			productName = YVPopupObserverTests;
+			productReference = 385EC56B2107FB0A00D2B096 /* YVPopupObserverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		385EC5752107FB0A00D2B096 /* YVPopupObserverUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 385EC5852107FB0A00D2B096 /* Build configuration list for PBXNativeTarget "YVPopupObserverUITests" */;
+			buildPhases = (
+				385EC5722107FB0A00D2B096 /* Sources */,
+				385EC5732107FB0A00D2B096 /* Frameworks */,
+				385EC5742107FB0A00D2B096 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				385EC5782107FB0A00D2B096 /* PBXTargetDependency */,
+			);
+			name = YVPopupObserverUITests;
+			productName = YVPopupObserverUITests;
+			productReference = 385EC5762107FB0A00D2B096 /* YVPopupObserverUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		385EC54B2107FB0800D2B096 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Yoonvey;
+				TargetAttributes = {
+					385EC5522107FB0800D2B096 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					385EC56A2107FB0A00D2B096 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 385EC5522107FB0800D2B096;
+					};
+					385EC5752107FB0A00D2B096 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 385EC5522107FB0800D2B096;
+					};
+				};
+			};
+			buildConfigurationList = 385EC54E2107FB0800D2B096 /* Build configuration list for PBXProject "YVPopupObserver" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 385EC54A2107FB0800D2B096;
+			productRefGroup = 385EC5542107FB0800D2B096 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				385EC5522107FB0800D2B096 /* YVPopupObserver */,
+				385EC56A2107FB0A00D2B096 /* YVPopupObserverTests */,
+				385EC5752107FB0A00D2B096 /* YVPopupObserverUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		385EC5512107FB0800D2B096 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385EC5632107FB0A00D2B096 /* LaunchScreen.storyboard in Resources */,
+				385EC5602107FB0A00D2B096 /* Assets.xcassets in Resources */,
+				385EC55E2107FB0800D2B096 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		385EC5692107FB0A00D2B096 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		385EC5742107FB0A00D2B096 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		385EC54F2107FB0800D2B096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385EC55B2107FB0800D2B096 /* ViewController.m in Sources */,
+				385EC5662107FB0A00D2B096 /* main.m in Sources */,
+				385EC5582107FB0800D2B096 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		385EC5672107FB0A00D2B096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385EC5702107FB0A00D2B096 /* YVPopupObserverTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		385EC5722107FB0A00D2B096 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385EC57B2107FB0A00D2B096 /* YVPopupObserverUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		385EC56D2107FB0A00D2B096 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 385EC5522107FB0800D2B096 /* YVPopupObserver */;
+			targetProxy = 385EC56C2107FB0A00D2B096 /* PBXContainerItemProxy */;
+		};
+		385EC5782107FB0A00D2B096 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 385EC5522107FB0800D2B096 /* YVPopupObserver */;
+			targetProxy = 385EC5772107FB0A00D2B096 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		385EC55C2107FB0800D2B096 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				385EC55D2107FB0800D2B096 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		385EC5612107FB0A00D2B096 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				385EC5622107FB0A00D2B096 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		385EC57D2107FB0A00D2B096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		385EC57E2107FB0A00D2B096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		385EC5802107FB0A00D2B096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CS83JSD9BS;
+				INFOPLIST_FILE = YVPopupObserver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ModouTech..YVPopupObserver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		385EC5812107FB0A00D2B096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CS83JSD9BS;
+				INFOPLIST_FILE = YVPopupObserver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ModouTech..YVPopupObserver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		385EC5832107FB0A00D2B096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CS83JSD9BS;
+				INFOPLIST_FILE = YVPopupObserverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ModouTech..YVPopupObserverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YVPopupObserver.app/YVPopupObserver";
+			};
+			name = Debug;
+		};
+		385EC5842107FB0A00D2B096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CS83JSD9BS;
+				INFOPLIST_FILE = YVPopupObserverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ModouTech..YVPopupObserverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YVPopupObserver.app/YVPopupObserver";
+			};
+			name = Release;
+		};
+		385EC5862107FB0A00D2B096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CS83JSD9BS;
+				INFOPLIST_FILE = YVPopupObserverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ModouTech..YVPopupObserverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YVPopupObserver;
+			};
+			name = Debug;
+		};
+		385EC5872107FB0A00D2B096 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CS83JSD9BS;
+				INFOPLIST_FILE = YVPopupObserverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ModouTech..YVPopupObserverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YVPopupObserver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		385EC54E2107FB0800D2B096 /* Build configuration list for PBXProject "YVPopupObserver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385EC57D2107FB0A00D2B096 /* Debug */,
+				385EC57E2107FB0A00D2B096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		385EC57F2107FB0A00D2B096 /* Build configuration list for PBXNativeTarget "YVPopupObserver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385EC5802107FB0A00D2B096 /* Debug */,
+				385EC5812107FB0A00D2B096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		385EC5822107FB0A00D2B096 /* Build configuration list for PBXNativeTarget "YVPopupObserverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385EC5832107FB0A00D2B096 /* Debug */,
+				385EC5842107FB0A00D2B096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		385EC5852107FB0A00D2B096 /* Build configuration list for PBXNativeTarget "YVPopupObserverUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				385EC5862107FB0A00D2B096 /* Debug */,
+				385EC5872107FB0A00D2B096 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 385EC54B2107FB0800D2B096 /* Project object */;
+}
