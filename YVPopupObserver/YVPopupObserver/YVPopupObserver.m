@@ -269,6 +269,13 @@ static YVPopupObserver *observer = nil;
 @end
 
 #pragma mark - <YVAnimationParam>
+@interface YVAnimationParam ()
+
+@property (nonatomic) CGFloat damping;//回弹的频率, 默认为0.3
+@property (nonatomic) CGFloat velocity;//回弹速度, 默认为10
+
+@end
+
 @implementation YVAnimationParam
 
 - (instancetype)init
@@ -290,7 +297,9 @@ static YVPopupObserver *observer = nil;
     self.dismissDuration = 0.3;
     self.delay = 0.0;
     self.springDamping = 0.3;
+    self.damping = 0.3;
     self.springVelocity = 10;
+    self.velocity = 10;
     self.options = UIViewAnimationOptionCurveEaseInOut;
 }
 
@@ -313,10 +322,32 @@ static YVPopupObserver *observer = nil;
     if(!isSpring)//关闭回弹效果
     {
         self.springDamping = 1.0f;
+        self.springVelocity = 0.0;
     }
     else
     {
-        self.springDamping = 0.3;
+        self.springDamping = self.damping;
+        self.springVelocity = self.velocity;;
+    }
+}
+
+- (void)setSpringDamping:(CGFloat)springDamping
+{
+    _springDamping = springDamping;
+    self.damping = springDamping;
+    if (!self.isSpring)
+    {
+        _springDamping = 1.0f;
+    }
+}
+
+- (void)setSpringVelocity:(CGFloat)springVelocity
+{
+    _springVelocity = springVelocity;
+    self.velocity = springVelocity;
+    if (!self.isSpring)
+    {
+        _springVelocity = 0.0;
     }
 }
 

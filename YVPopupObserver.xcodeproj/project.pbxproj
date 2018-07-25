@@ -15,6 +15,7 @@
 		38674A0D21080F9F002BBEC9 /* UIView+YVFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 38674A0921080F9F002BBEC9 /* UIView+YVFrame.m */; };
 		38674A0E21080F9F002BBEC9 /* YVPopupObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 38674A0A21080F9F002BBEC9 /* YVPopupObserver.m */; };
 		38674A1121081312002BBEC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38674A0F21081312002BBEC9 /* AppDelegate.m */; };
+		38674A152108171D002BBEC9 /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38674A142108171D002BBEC9 /* SampleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		38674A0C21080F9F002BBEC9 /* YVPopupObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVPopupObserver.h; sourceTree = "<group>"; };
 		38674A0F21081312002BBEC9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		38674A1021081312002BBEC9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		38674A132108171D002BBEC9 /* SampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
+		38674A142108171D002BBEC9 /* SampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				38674A0821080F9F002BBEC9 /* YVPopupObserver */,
+				38674A12210816E8002BBEC9 /* Classes */,
 				385EC55F2107FB0A00D2B096 /* Assets.xcassets */,
 				385EC5612107FB0A00D2B096 /* LaunchScreen.storyboard */,
 				385EC5642107FB0A00D2B096 /* Info.plist */,
@@ -140,6 +144,15 @@
 				38674A0A21080F9F002BBEC9 /* YVPopupObserver.m */,
 			);
 			path = YVPopupObserver;
+			sourceTree = "<group>";
+		};
+		38674A12210816E8002BBEC9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				38674A132108171D002BBEC9 /* SampleViewController.h */,
+				38674A142108171D002BBEC9 /* SampleViewController.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38674A152108171D002BBEC9 /* SampleViewController.m in Sources */,
 				38674A1121081312002BBEC9 /* AppDelegate.m in Sources */,
 				385EC5662107FB0A00D2B096 /* main.m in Sources */,
 				38674A0E21080F9F002BBEC9 /* YVPopupObserver.m in Sources */,

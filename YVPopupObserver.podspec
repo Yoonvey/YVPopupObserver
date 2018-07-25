@@ -7,6 +7,6 @@ Pod::Spec.new do |s|
     s.license              = { :type => "MIT", :file => "LICENSE" }
     s.author             = { "Yoonvey" => "3084882664@qq.com" }
     s.source       = { :git => "https://github.com/Yoonvey/YVPopupObserver.git", :tag => s.version }
-    s.source_files  = "YVPopupObserver","YVPopupObserver/**/*.{h,m}"
+    s.source_files  = "YVPopupObserver/YVPopupObserver/*.{h,m}"
     s.requires_arc = true
 end

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "SampleViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -15,8 +17,19 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    SampleViewController *sampleControl = [[SampleViewController alloc] init];
+    UINavigationController *navControl = [[UINavigationController alloc] initWithRootViewController:sampleControl];
+    navControl.navigationBar.barTintColor = [UIColor redColor];
+    navControl.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
+    self.window.rootViewController = navControl;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
