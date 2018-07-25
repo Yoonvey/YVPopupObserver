@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		385EC5582107FB0800D2B096 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 385EC5572107FB0800D2B096 /* AppDelegate.m */; };
-		385EC55B2107FB0800D2B096 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 385EC55A2107FB0800D2B096 /* ViewController.m */; };
-		385EC55E2107FB0800D2B096 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385EC55C2107FB0800D2B096 /* Main.storyboard */; };
 		385EC5602107FB0A00D2B096 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385EC55F2107FB0A00D2B096 /* Assets.xcassets */; };
 		385EC5632107FB0A00D2B096 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385EC5612107FB0A00D2B096 /* LaunchScreen.storyboard */; };
 		385EC5662107FB0A00D2B096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 385EC5652107FB0A00D2B096 /* main.m */; };
@@ -36,11 +33,6 @@
 
 /* Begin PBXFileReference section */
 		385EC5532107FB0800D2B096 /* YVPopupObserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YVPopupObserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		385EC5562107FB0800D2B096 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		385EC5572107FB0800D2B096 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		385EC5592107FB0800D2B096 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		385EC55A2107FB0800D2B096 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		385EC55D2107FB0800D2B096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		385EC55F2107FB0A00D2B096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		385EC5622107FB0A00D2B096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		385EC5642107FB0A00D2B096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,11 +93,6 @@
 		385EC5552107FB0800D2B096 /* YVPopupObserver */ = {
 			isa = PBXGroup;
 			children = (
-				385EC5562107FB0800D2B096 /* AppDelegate.h */,
-				385EC5572107FB0800D2B096 /* AppDelegate.m */,
-				385EC5592107FB0800D2B096 /* ViewController.h */,
-				385EC55A2107FB0800D2B096 /* ViewController.m */,
-				385EC55C2107FB0800D2B096 /* Main.storyboard */,
 				385EC55F2107FB0A00D2B096 /* Assets.xcassets */,
 				385EC5612107FB0A00D2B096 /* LaunchScreen.storyboard */,
 				385EC5642107FB0A00D2B096 /* Info.plist */,
@@ -237,7 +224,6 @@
 			files = (
 				385EC5632107FB0A00D2B096 /* LaunchScreen.storyboard in Resources */,
 				385EC5602107FB0A00D2B096 /* Assets.xcassets in Resources */,
-				385EC55E2107FB0800D2B096 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				385EC55B2107FB0800D2B096 /* ViewController.m in Sources */,
 				385EC5662107FB0A00D2B096 /* main.m in Sources */,
-				385EC5582107FB0800D2B096 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +284,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		385EC55C2107FB0800D2B096 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				385EC55D2107FB0800D2B096 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		385EC5612107FB0A00D2B096 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
