@@ -14,6 +14,7 @@
 		385EC57B2107FB0A00D2B096 /* YVPopupObserverUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 385EC57A2107FB0A00D2B096 /* YVPopupObserverUITests.m */; };
 		38674A0D21080F9F002BBEC9 /* UIView+YVFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 38674A0921080F9F002BBEC9 /* UIView+YVFrame.m */; };
 		38674A0E21080F9F002BBEC9 /* YVPopupObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 38674A0A21080F9F002BBEC9 /* YVPopupObserver.m */; };
+		38674A1121081312002BBEC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38674A0F21081312002BBEC9 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		38674A0A21080F9F002BBEC9 /* YVPopupObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVPopupObserver.m; sourceTree = "<group>"; };
 		38674A0B21080F9F002BBEC9 /* UIView+YVFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YVFrame.h"; sourceTree = "<group>"; };
 		38674A0C21080F9F002BBEC9 /* YVPopupObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YVPopupObserver.h; sourceTree = "<group>"; };
+		38674A0F21081312002BBEC9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		38674A1021081312002BBEC9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,8 @@
 				385EC5612107FB0A00D2B096 /* LaunchScreen.storyboard */,
 				385EC5642107FB0A00D2B096 /* Info.plist */,
 				385EC5652107FB0A00D2B096 /* main.m */,
+				38674A1021081312002BBEC9 /* AppDelegate.h */,
+				38674A0F21081312002BBEC9 /* AppDelegate.m */,
 			);
 			path = YVPopupObserver;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38674A1121081312002BBEC9 /* AppDelegate.m in Sources */,
 				385EC5662107FB0A00D2B096 /* main.m in Sources */,
 				38674A0E21080F9F002BBEC9 /* YVPopupObserver.m in Sources */,
 				38674A0D21080F9F002BBEC9 /* UIView+YVFrame.m in Sources */,
