@@ -12,6 +12,7 @@
 		385EC5662107FB0A00D2B096 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 385EC5652107FB0A00D2B096 /* main.m */; };
 		385EC5702107FB0A00D2B096 /* YVPopupObserverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 385EC56F2107FB0A00D2B096 /* YVPopupObserverTests.m */; };
 		385EC57B2107FB0A00D2B096 /* YVPopupObserverUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 385EC57A2107FB0A00D2B096 /* YVPopupObserverUITests.m */; };
+		3864C3C42115346F00CD2E43 /* YVPopupMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3864C3C32115346F00CD2E43 /* YVPopupMaskView.m */; };
 		38674A0D21080F9F002BBEC9 /* UIView+YVFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 38674A0921080F9F002BBEC9 /* UIView+YVFrame.m */; };
 		38674A0E21080F9F002BBEC9 /* YVPopupObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 38674A0A21080F9F002BBEC9 /* YVPopupObserver.m */; };
 		38674A1121081312002BBEC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38674A0F21081312002BBEC9 /* AppDelegate.m */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38082A902113E35600BEC777 /* YVPopupCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YVPopupCommon.h; sourceTree = "<group>"; };
 		385EC5532107FB0800D2B096 /* YVPopupObserver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YVPopupObserver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		385EC55F2107FB0A00D2B096 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		385EC5622107FB0A00D2B096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		385EC5762107FB0A00D2B096 /* YVPopupObserverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YVPopupObserverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		385EC57A2107FB0A00D2B096 /* YVPopupObserverUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YVPopupObserverUITests.m; sourceTree = "<group>"; };
 		385EC57C2107FB0A00D2B096 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3864C3C22115346F00CD2E43 /* YVPopupMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YVPopupMaskView.h; sourceTree = "<group>"; };
+		3864C3C32115346F00CD2E43 /* YVPopupMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YVPopupMaskView.m; sourceTree = "<group>"; };
 		38674A0921080F9F002BBEC9 /* UIView+YVFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YVFrame.m"; sourceTree = "<group>"; };
 		38674A0A21080F9F002BBEC9 /* YVPopupObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YVPopupObserver.m; sourceTree = "<group>"; };
 		38674A0B21080F9F002BBEC9 /* UIView+YVFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YVFrame.h"; sourceTree = "<group>"; };
@@ -138,10 +142,13 @@
 		38674A0821080F9F002BBEC9 /* YVPopupObserver */ = {
 			isa = PBXGroup;
 			children = (
+				38082A902113E35600BEC777 /* YVPopupCommon.h */,
 				38674A0B21080F9F002BBEC9 /* UIView+YVFrame.h */,
 				38674A0921080F9F002BBEC9 /* UIView+YVFrame.m */,
 				38674A0C21080F9F002BBEC9 /* YVPopupObserver.h */,
 				38674A0A21080F9F002BBEC9 /* YVPopupObserver.m */,
+				3864C3C22115346F00CD2E43 /* YVPopupMaskView.h */,
+				3864C3C32115346F00CD2E43 /* YVPopupMaskView.m */,
 			);
 			path = YVPopupObserver;
 			sourceTree = "<group>";
@@ -287,6 +294,7 @@
 				38674A152108171D002BBEC9 /* SampleViewController.m in Sources */,
 				38674A1121081312002BBEC9 /* AppDelegate.m in Sources */,
 				385EC5662107FB0A00D2B096 /* main.m in Sources */,
+				3864C3C42115346F00CD2E43 /* YVPopupMaskView.m in Sources */,
 				38674A0E21080F9F002BBEC9 /* YVPopupObserver.m in Sources */,
 				38674A0D21080F9F002BBEC9 /* UIView+YVFrame.m in Sources */,
 			);
@@ -452,6 +460,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CS83JSD9BS;
 				INFOPLIST_FILE = YVPopupObserver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,6 +478,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CS83JSD9BS;
 				INFOPLIST_FILE = YVPopupObserver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

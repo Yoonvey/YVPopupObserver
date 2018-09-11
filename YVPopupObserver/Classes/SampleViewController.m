@@ -55,7 +55,6 @@ static NSString *cellId = @"UITableViewCell";
     view.y_size = CGSizeMake(ScreenWidth - 60, 200);
     view.layer.backgroundColor = [UIColor whiteColor].CGColor;
     view.layer.cornerRadius = 5;
-    
     [[YVPopupObserver sharedObserver] showAlertWithAnimationParam:nil customView:view];
 }
 

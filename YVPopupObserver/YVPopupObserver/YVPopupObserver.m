@@ -8,12 +8,18 @@
 
 #import "YVPopupObserver.h"
 
-#import "UIView+YVFrame.h"
-
-#define YVScreenWidth      [UIScreen mainScreen].bounds.size.width
-#define YVScreenHeight     [UIScreen mainScreen].bounds.size.height
+#import "YVPopupMaskView.h"
 
 #pragma mark - <YVPopupObserver>
+@interface YVPopupObserver ()
+
+@property (nonatomic, weak) UIView *customView;
+@property (nonatomic) CGPoint initialCenter;
+@property (nonatomic) CGFloat deviantDuration;
+@property (nonatomic) BOOL isPopup;
+
+@end
+
 @implementation YVPopupObserver
 
 static YVPopupObserver *observer = nil;
@@ -53,6 +59,10 @@ static YVPopupObserver *observer = nil;
 #pragma mark PopupAnimation
 - (void)showAlertWithAnimationParam:(YVAnimationParam *)animationParam customView:(UIView *)customView
 {
+    self.customView = customView;
+    self.initialCenter = self.customView.center;
+    self.isPopup = YES;
+    
     UIView *superView = (UIView *)[UIApplication sharedApplication].delegate.window;
     YVAnimationParam *animeParam = animationParam ? animationParam : [[YVAnimationParam alloc] init] ;
     
@@ -96,10 +106,47 @@ static YVPopupObserver *observer = nil;
                      completion:nil];
 }
 
+- (void)moveCustomViewWithDuration:(CGFloat)duration deviantDirection:(DeviantDirection)direction deviant:(CGFloat)deviant
+{
+    if (self.customView && self.isPopup)
+    {
+        self.deviantDuration = duration > 0.0 ? duration: 0.3;
+        [UIView animateWithDuration:duration animations:^
+         {
+             if (direction == DeviantDirectionVertical)
+             {
+                 CGFloat y = self.customView.center.y;
+                 y += deviant;
+                 self.customView.center = CGPointMake(self.customView.center.x, y);
+             }
+             else
+             {
+                 CGFloat x = self.customView.center.x;
+                 x += deviant;
+                 self.customView.center = CGPointMake(x, self.customView.center.y);
+             }
+         }];
+    }
+}
+
+- (void)recoverCustomViewInitialCenter
+{
+    if (self.customView && self.isPopup)
+    {
+        [UIView animateWithDuration:self.deviantDuration animations:^
+         {
+             self.customView.center = self.initialCenter;
+         }];
+    }
+}
+
 - (void)dismissAlert:(YVTapGestureRecognizer *)tapGS
 {
+    self.customView = nil;
+    self.isPopup = NO;
+    
     YVAnimationParam *animeParam = (YVAnimationParam *)tapGS.subObject;
-    UIView *maskView = tapGS.view;
+    UIView *maskView = (UIView *)tapGS.view;
     UIView *customView = (UIView *)[[maskView subviews] lastObject];
     
     CGPoint touchPoint = [tapGS locationOfTouch:0 inView:maskView];
@@ -125,6 +172,9 @@ static YVPopupObserver *observer = nil;
 
 - (void)dismissAlertWithAnimationParam:(YVAnimationParam *)animationParam customView:(UIView *)customView
 {
+    self.customView = nil;
+    self.isPopup = NO;
+    
     YVAnimationParam *animeParam = animationParam ? animationParam : [[YVAnimationParam alloc] init] ;
     UIView *superView = (UIView *)[customView superview];
     
@@ -155,6 +205,9 @@ static YVPopupObserver *observer = nil;
 #pragma mark PushAnimation
 - (void)showPushWithAnimationParam:(YVAnimationParam *)animationParam customView:(UIView *)customView direction:(PushDirection)direction deviant:(CGFloat)deviant
 {
+    self.customView = customView;
+    self.isPopup = NO;
+    
     UIView *superView = (UIView *)[UIApplication sharedApplication].delegate.window;
     YVAnimationParam *animeParam = animationParam ? animationParam : [[YVAnimationParam alloc] init] ;
     CGFloat startCenterY = direction == PushDirectionUp ? YVScreenHeight +  (customView.y_height)*0.5: -customView.y_height*0.5 ;
@@ -200,10 +253,13 @@ static YVPopupObserver *observer = nil;
 
 - (void)dismissPush:(YVTapGestureRecognizer *)tapGS
 {
+    self.customView = nil;
+    self.isPopup = NO;
+    
     YVAnimationParam *animeParam = (YVAnimationParam *)tapGS.subObject;
     PushDirection direction = tapGS.direction;
     
-    UIView *maskView = tapGS.view;
+    UIView *maskView = (UIView *)tapGS.view;
     UIView *customView = (UIView *)[[maskView subviews] lastObject];
     
     CGFloat endCenterY = (direction == PushDirectionUp) ? YVScreenHeight + customView.y_height*0.5 : -customView.y_height*0.5 ;
@@ -226,6 +282,9 @@ static YVPopupObserver *observer = nil;
 
 - (void)dismissPushWithAnimationParam:(YVAnimationParam *)animationParam direction:(PushDirection)direction customView:(UIView *)customView
 {
+    self.customView = nil;
+    self.isPopup = NO;
+    
     YVAnimationParam *animeParam = animationParam ? animationParam : [[YVAnimationParam alloc] init] ;
     UIView *superView = (UIView *)[customView superview];
     
@@ -257,7 +316,7 @@ static YVPopupObserver *observer = nil;
 #pragma mark UIGestureRecognizerDelegate
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
 {
-    UIView *maskView = gestureRecognizer.view;
+    UIView *maskView = (UIView *)gestureRecognizer.view;
     UIView *customView = (UIView *)[[maskView subviews] lastObject];
     if ([touch.view isDescendantOfView:customView])
     {
@@ -292,12 +351,12 @@ static YVPopupObserver *observer = nil;
 {
     self.isMask = YES;
     self.isSpring = YES;
-    self.maskAlpha = 0.6;
+    self.maskAlpha = 0.3;
     self.showDuration = 0.3;
     self.dismissDuration = 0.3;
     self.delay = 0.0;
-    self.springDamping = 0.3;
-    self.damping = 0.3;
+    self.springDamping = 0.4;
+    self.damping = 0.4;
     self.springVelocity = 10;
     self.velocity = 10;
     self.options = UIViewAnimationOptionCurveEaseInOut;
