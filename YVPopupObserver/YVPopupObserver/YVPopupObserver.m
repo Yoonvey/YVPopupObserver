@@ -60,7 +60,6 @@ static YVPopupObserver *observer = nil;
 - (void)showAlertWithAnimationParam:(YVAnimationParam *)animationParam customView:(UIView *)customView
 {
     self.customView = customView;
-    self.initialCenter = self.customView.center;
     self.isPopup = YES;
     
     UIView *superView = (UIView *)[UIApplication sharedApplication].delegate.window;
@@ -98,6 +97,7 @@ static YVPopupObserver *observer = nil;
          customView.alpha = 1;
          customView.layer.transform = CATransform3DMakeScale(1, 1, 1);
          customView.center = superView.center;
+         self.initialCenter = customView.center;
          if (maskView)
          {
              maskView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:animeParam.maskAlpha];

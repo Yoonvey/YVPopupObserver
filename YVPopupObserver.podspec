@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "YVPopupObserver"
-    s.version      = "1.0.5"
+    s.version      = "1.0.7"
     s.ios.deployment_target = '8.0'
     s.summary      = "A practical setting interface framework."
     s.homepage     = "https://github.com/Yoonvey/YVPopupObserver"
